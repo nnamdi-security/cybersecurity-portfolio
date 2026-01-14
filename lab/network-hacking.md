@@ -40,6 +40,9 @@ To learn how malicious hackers hack a wired or wireless network and steal inform
 ## Gaining Access
 5. View all networks with WPS enabled:
 - wash --interface wlan0 ✅
+## Screenshot
+![Wash command](../screenshots/wash.png)
+
 
 
 
