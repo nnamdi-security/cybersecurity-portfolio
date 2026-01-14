@@ -38,10 +38,6 @@ You can get these coordinates from a photo metadata using exiftool.
 
 haveibeenpwned.com
 
-**To SSH into another device running SSH server**
-
-On powershell: ssh username@ip address
-
 
 ## SHODAN COMMANDS
 - shodan init <paste your API key here>
@@ -179,6 +175,35 @@ Confirm save: *Enter*
 Exit nano: *Ctrl + X*
 
 
+## WINDOWS COMMANDS
+tasklist | findstr "PID eq 1234"   or  tasklist /fi "PID eq 1234"
+
+POWERSHELL: get-content your-file.txt | select-string -pattern "your text"
+
+- code .\my-project\
+- Win + R, type appwiz.cpl (to uninstall stubborn app)
+- Win + R, msinfo32 
+- Win + R, devmgmt.msc
+
+### DISKPART
+- list disk
+- select disk 2
+- clean
+- create partition primary
+- format fs=exfat (quick)
+- assign letter=H
+- Exit
+
+
+### SSH 
+**To SSH into another device running SSH server:**
+On powershell: ssh username@ip address
+
+**To check serial Number:**
+Wmic bios get serialnumber
+
+**How to Activate Windows**:
+irm https://get.activated.win | iex
 
 
 
