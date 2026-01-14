@@ -77,27 +77,11 @@ The handshake will be received once the client reconnects
 
 11. To do the cracking, use Aircrack-ng to unpack the handshake and extract the useful information.
 - aircrack-ng wpa_handshake.cap -w **wordlist file.txt**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Screenshot
+![Wordlist](../screenshots/wordlist.png)
 
 
 ## What I Learned
-- How to identify active services
-- Importance of open ports in security
+- How to identify Weak network and harden it
+- Importance of strong authentication is wireless network
 
-## Next Steps
-- Learn service version detection
-- Understand firewall evasion techniques
