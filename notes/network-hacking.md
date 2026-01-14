@@ -29,7 +29,9 @@ So all we need right now is a program that can capture these packets for us. The
 
 
 **To run airodump-ng:**
+
 iwconfig
+
 airodump-ng <int name>
 
 To sniff on 5GH frequency(if the adapter supports it)
