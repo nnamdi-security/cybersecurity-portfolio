@@ -13,7 +13,7 @@ To learn how to scan a network and identify open ports using Nmap.
 ### Screenshot
 ![Zenmap Scan](../screenshots/zenmap.png)
 
-Another normal ping scan of the network few hours later discovered all the connected devices
+Another normal ping scan of the network few hours later discovered all the connected devices.
 I later found out I needed to repeat the scan several times for it to discover all devices on the networks
 
 ### Screenshot
@@ -29,7 +29,7 @@ I later found out I needed to repeat the scan several times for it to discover a
 
 ![Nmap Scan](../screenshots/quick-scan-plus.png)
 
-**Obervation**: The IOS device has an SSH server but by default iOS devices do not have an SSH server. Usually when you jailbreak the phone or the device it will automatically install an SSH server.
+**Obervation**: The IOS device in the scan output has an SSH server but by default iOS devices do not have an SSH server. Usually when you jailbreak the phone or the device it will automatically install an SSH server.
  
 
 ## What I Learned
