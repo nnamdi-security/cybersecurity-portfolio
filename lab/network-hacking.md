@@ -13,8 +13,7 @@ To learn how malicious hackers hack a wired or wireless network and steal inform
 ## Steps Performed
 ### Pre-connection Attacks
 1. Bring down my machine interface to change the MAC address
-
--ifconfig wlan0 down,
+-ifconfig wlan0 down
 - ifconfig wlan0 hw ether *new mac address*
 - ifconfig wlan0 up ✅
 
