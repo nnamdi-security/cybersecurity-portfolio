@@ -200,9 +200,11 @@ POWERSHELL: get-content your-file.txt | select-string -pattern "your text"
 On powershell: ssh username@ip address
 
 **To check serial Number:**
-Wmic bios get serialnumber
+
+Wmic bios get serialnumber (This command no longer works on newer version of windows 11)
 
 **How to Activate Windows**:
+
 irm https://get.activated.win | iex
 
 
