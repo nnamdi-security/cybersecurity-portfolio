@@ -8,7 +8,8 @@ ifconfig wlan0 hw ether <new mac address>. ensure to start with 00
 ifconfig wlan0 up ✅
 
 **Note: MAC address will revert back to original after a restart**
-To set an adapter to monitor mode
+
+**To set an adapter to monitor mode:**
 iwconfig
 ifconfig wlan0 down
 aimon-ng check kill
