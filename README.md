@@ -76,3 +76,10 @@ I am actively seeking a **cybersecurity internship** where I can learn from expe
 
 ## Contact
 - Email: peter.chizobam@xultechng.com
+
+## 📁 Explore My Work
+- 👉 [Notes](notes/)
+- 👉 [Labs](labs/)
+- 👉 [Projects](projects/)
+- 👉 [Screenshots](screenshots/)
+
