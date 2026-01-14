@@ -3,8 +3,11 @@
 **Changing MAC address**
 
 Bring down the interface:
+
 ifconfig wlan0 down
+
 ifconfig wlan0 hw ether <new mac address>. ensure to start with 00
+
 ifconfig wlan0 up ✅
 
 **Note: MAC address will revert back to original after a restart**
