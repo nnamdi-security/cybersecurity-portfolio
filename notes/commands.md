@@ -20,7 +20,7 @@ To Change the server used to perform lookups.
 
 > netacad.com
 
-The any query type can retrieve much, or all, of the information contained in the DNS record for a host name.
+The **any** query type can retrieve much, or all, of the information contained in the DNS record for a host name.
 whois 72.163.5.201
 dig netacad.com any
 dig cisco.com 8.8.8.8 ns
@@ -59,21 +59,21 @@ On powershell: ssh username@ip address
 - sudo dpkg --configure -a
 - sudo apt -f install
 
-# 1) See what would change
+### 1) See what would change
 - apt list --upgradable
 - apt -s full-upgrade     # dry-run (no changes)
 
-# 2) Do the real upgrade (Kali prefers full-upgrade)
+### 2) Do the real upgrade (Kali prefers full-upgrade)
 - sudo apt update
 - sudo apt full-upgrade -y
 
-# 3) Cleanup
+### 3) Cleanup
 - sudo apt autoremove --purge -y
 - sudo apt clean
 
 
 
-# Pairing Bluetooth Device
+### Pairing Bluetooth Device
 
 - sudo bluetoothctl
 - power on
@@ -85,37 +85,37 @@ On powershell: ssh username@ip address
 
 
 
-# SCREENSHOT ON KALI
+### SCREENSHOT ON KALI
 
 Fn + Alt + Shift → active window.
 
 
-# Telegram
+### Telegram
 
 telegram &
 The & puts it in the background so your terminal stays free
 
 
-# Check release version & codename
+### Check release version & codename
 
 Cat /etc/os-release
 
 ## SSH COMMANDS
 
-# 1. Install OpenSSH server if not already installed
+### 1. Install OpenSSH server if not already installed
 - sudo apt update
 - sudo apt install -y openssh-server
 
-# 2. Enable the SSH service to start on boot
+### 2. Enable the SSH service to start on boot
 - sudo systemctl enable ssh
 
-# 3. Start the SSH service immediately
+### 3. Start the SSH service immediately
 - sudo systemctl start ssh
 
-# 4. Verify that SSH is running
+### 4. Verify that SSH is running
 - sudo systemctl status ssh
 
-# 5. (Optional) Check that the port is listening (default: 22)
+### 5. (Optional) Check that the port is listening (default: 22)
 - ss -tulpn | grep ssh
 
 
@@ -143,7 +143,7 @@ gobuster dir -u http://192.168.1.100/ -w /usr/share/wordlists/dirb/common.txt
 
 
 
-✅ Example with extensions and threading:
+**Example with extensions and threading:**
 gobuster dir -u http://targetsite.com/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt -t 50 -o gobuster_results.txt
 
 
