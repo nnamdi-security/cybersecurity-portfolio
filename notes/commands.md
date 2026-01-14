@@ -55,7 +55,7 @@ On powershell: ssh username@ip address
 
 **Safe Upgrade Routine**
 
-# Make sure nothing is half-configured
+### Make sure nothing is half-configured
 - sudo dpkg --configure -a
 - sudo apt -f install
 
@@ -170,15 +170,13 @@ Add:
 
 Then run Gobuster vhost enumeration against example.com.
 
-NANO FILE EDITOR
-Action
-Shortcut
-Save file
-Ctrl + O
-Confirm save
-Enter
-Exit nano
-Ctrl + X
+### NANO FILE EDITOR
+
+Save file: *Ctrl + O*
+
+Confirm save: *Enter*
+
+Exit nano: *Ctrl + X*
 
 
 
