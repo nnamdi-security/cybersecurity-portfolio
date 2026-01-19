@@ -8,4 +8,4 @@
 - TCP/IP is also layered but does not use all of the OSI layers, though the layers are equivalent in operation and function.
 
 Comparing the OSI model with the TCP/IP stack
-![OSI v TCP/IP] 
+![OSI v TCP/IP](../screenshots/OSI-TCP.png) 
