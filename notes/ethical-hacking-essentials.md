@@ -83,6 +83,9 @@ Non-Technical Skills
 - Analytical problem solving: When an exploit fails, can you logically deduce why? Is it a firewall, an EDR, or just a syntax error in your code?
 - Critical Thinking & Creativity: Thinking Outside the Box: Attackers don't follow rules. You need the creativity to see a system not as it should work, but as it could work if pushed.
 
+# Information Security Threat and Vulnerability Assessment
+
+
 
 
 
