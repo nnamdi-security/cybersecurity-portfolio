@@ -84,6 +84,13 @@ Non-Technical Skills
 - Critical Thinking & Creativity: Thinking Outside the Box: Attackers don't follow rules. You need the creativity to see a system not as it should work, but as it could work if pushed.
 
 # Information Security Threat and Vulnerability Assessment
+A threat is the danger waiting to happen.
+- Vulnerability: A weakness or hole in your defense (e.g., an unlocked window).
+- Threat: The actor or event that can take advantage of that weakness (e.g., a burglar).
+- Risk: The probability that the threat will find the vulnerability and cause damage (e.g., the likelihood of a break-in)
+
+Different Ways for Malware to Enter a System
+- Advanced Social Engineering:
 
 
 
