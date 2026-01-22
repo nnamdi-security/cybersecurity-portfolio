@@ -48,7 +48,8 @@ To learn how malicious hackers hack wired or wireless network and steal informat
 ### Screenshot2
 ![Reaver2](../screenshots/reaver2.png)
 
-**NOTE:** If WPS is disabled on the target network, or if it's enabled, but configured to use push button or PBC, then I will have to hack WPA/WPA2 with a wordlist(Using Handshake). *This is where actual work starts*
+**NOTE:** If WPS is disabled on the target network, or if it's enabled, but configured to use push button or PBC, then I will have to hack WPA/WPA2 with a wordlist(Using Handshake).                        *This is where actual work starts*
+
 7. Run airodump-ng to see all the networks around.
 
 - airodump-ng wlan0
