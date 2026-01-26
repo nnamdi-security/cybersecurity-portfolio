@@ -120,3 +120,9 @@ Types of Malware
 
 ## Vulnerability
 In a network, there are generally two main causes for systems being vulnerable: (1) software or hardware misconfiguration and (2) poor programming practices
+
+Common Reasons behind the existence of Vulnerability
+- Hardware or software misconfiguration
+- Insecure or poor design of the network and application
+- Inherent technological weakness
+- Careless approach of end users
