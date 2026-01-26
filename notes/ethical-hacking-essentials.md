@@ -67,14 +67,14 @@ Ethical Hacking Concepts, Scope, and Limitations
 
 Skills of an Ethical Hacker
 
-Technical Skills
+### Technical Skills
 - Operating System Proficiency: Linux/Unix(CLI, shell scripting etc.) Windows & Active Directory(powershell)
 - Networking Fundamentals: Protocols(HTTPs, OSI model, TCP/IP, DNS, SNMP etc), Packet Analysis(Wireshark, TCPDUMP), Intrastructure (router, switches firewall etc)
 - Programming and Scripting: Python(for security automation and exploit development), JavaScript(for finding vulnerabilities in web browser and application), SQL(for testing and preventing SQL injection)
 - Web Application Security
 - Specialized Security Disciplines: cryptography, cloud security, vulnerability assessment, AI and machine learning etc
 
-Non-Technical Skills
+### Non-Technical Skills
 - Ethics and Integrity
 - Empathy & Collaboration
 - Persistence and Adaptability
@@ -89,7 +89,7 @@ A threat is the danger waiting to happen.
 - Threat: The actor or event that can take advantage of that weakness (e.g., a burglar).
 - Risk: The probability that the threat will find the vulnerability and cause damage (e.g., the likelihood of a break-in)
 
-## Different Ways for Malware to Enter a System(infection Vector)
+### Different Ways for Malware to Enter a System(infection Vector)
 - Email attachments & links
 - Drive-by downloads
 - Infected removable media
@@ -101,7 +101,7 @@ A threat is the danger waiting to happen.
 - Trojanized Software: Modified legitimate software
 - Watering Hole
 
-## Types of Malware
+### Types of Malware
 - Viruses
 - Worms
 - Trojans
@@ -118,7 +118,7 @@ A threat is the danger waiting to happen.
 
 
 
-## Vulnerability
+### Vulnerability
 In a network, there are generally two main causes for systems being vulnerable: (1) software or hardware misconfiguration and (2) poor programming practices
 
 Common Reasons Behind the Existence of Vulnerability
