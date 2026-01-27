@@ -137,3 +137,6 @@ The vulnerability management life cycle is an important process that helps ident
 - Risk Assessment: All serious uncertainties that are associated with the system are assessed and prioritized 
 - Remediation: Remediation is the process of applying fixes on vulnerable systems in order to reduce the impact and severity of vulnerabilities
 - Verification: The security team performs a re-scan of systems to assess if the required remediation is complete and whether the individual fixes have been applied to the impacted assets
+
+# Password Cracking Techniques & Countermeasures
+Windows
