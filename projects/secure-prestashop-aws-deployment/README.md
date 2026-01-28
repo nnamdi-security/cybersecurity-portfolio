@@ -76,7 +76,6 @@ I used the `icacls` command in PowerShell to disable permission inheritance and 
 ---
 
 ### 2. The RDS “Stealth” Connection Timeout
-
 **Challenge:**  
 The web server failed to communicate with the database, returning a `MySQL Error 2002` connection timeout. Additionally, AWS CloudShell access to the database was blocked.
 
@@ -90,14 +89,11 @@ This exercise reinforced **Network Access Control** and the principle of **least
 ---
 
 ### 3. The HTTPS/SSL “Infinite Redirect Loop”
-
 **Challenge:**  
 After installation, PrestaShop enforced HTTPS redirection, rendering the site inaccessible because no SSL certificate had been installed yet.
 
 **Solution:**  
 With the GUI unreachable, I performed a **back-end database remediation**. I connected to the RDS instance via CLI and manually updated the `ps_configuration` table to set:
-
-```sql
 PS_SSL_ENABLED = 0
 
 
