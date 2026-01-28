@@ -82,7 +82,7 @@ The web server failed to communicate with the database, returning a `MySQL Error
 **Solution:**  
 I identified the issue as a **Security Group misconfiguration**. I manually updated the database security group’s inbound rules to allow MySQL traffic on **Port 3306** strictly from:
 - The EC2 application server’s **private IP**
-- My administrative IP for management access
+- Cloud shell ip address
 
 This exercise reinforced **Network Access Control** and the principle of **least privilege**.
 
@@ -93,7 +93,7 @@ This exercise reinforced **Network Access Control** and the principle of **least
 After installation, PrestaShop enforced HTTPS redirection, rendering the site inaccessible because no SSL certificate had been installed yet.
 
 **Solution:**  
-With the GUI unreachable, I performed a **back-end database remediation**. I connected to the RDS instance via CLI and manually updated the `ps_configuration` table to set:
+With the GUI unreachable, I performed a **back-end database remediation**. I connected to the RDS instance via Cloudshell and manually updated the `ps_configuration` table to set:
 PS_SSL_ENABLED = 0
 
 
@@ -107,5 +107,5 @@ PS_SSL_ENABLED = 0
 ---
 
 ### Author
-**Chizobam Ileh**  
+**Peter Ileh**  
 Cybersecurity Enthusiast | Cloud & Infrastructure Security
