@@ -55,6 +55,7 @@ This repository documents the technical setup of a local cybersecurity laborator
    ```sudo apt update && sudo apt install git python3-venv libssl-dev libffi-dev build-essential authbind -y```
    
    **Note**: ```sudo apt``` command may not work so you need to install it before you can use it by logging in as root user and using ```apt install sudo -y```
+   
    If your Debian VM cannot reach the internet for the installalation, change the VM's **network adapter** setting to **NAT**.
    
 3.Clone Cowrie and Set Up Virtual Environment:
@@ -79,16 +80,19 @@ This repository documents the technical setup of a local cybersecurity laborator
 **Issue**: Attempting to run ```bin/cowrie start``` resulted in a "file not found" error, despite being in the correct directory.
 
 **The Solution**: Modern Cowrie versions no longer ship with a prebuilt bin/cowrie script by default. The Cowrie package needed to be explicitly installed into the virtual environment's path to register the binaries correctly.
+
 **Fix:** ```pip install -e .```. This registers Cowrie as a Python package and creates the cowrie executable inside the virtual environment.
+
 **Verification**: Used ```which cowrie``` to confirm the path.
+
 **Launch**: Successfully initialized using ```cowrie start``` and verified with ```cowrie status```.
 
 ## Tools & Technologies Used
-**Hypervisor**: VMware Workstation Pro 17.x
-**Attacker OS**: Kali Linux 2025.x
-**Victim OS**: Debian 12 (Bookworm)
-**Honeypot**: Cowrie (SSH/Telnet)
-**Networking**: VMware Host-Only Adapter (Internal Lab Network)
+- **Hypervisor**: VMware Workstation Pro 17.x
+- **Attacker OS**: Kali Linux 2025.x
+- **Victim OS**: Debian 12 (Bookworm)
+- **Honeypot**: Cowrie (SSH/Telnet)
+- **Networking**: VMware Host-Only Adapter (Internal Lab Network)
 
 ## Outcome
 - Kali Linux configured as the attack platform
