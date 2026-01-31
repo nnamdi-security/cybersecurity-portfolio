@@ -88,7 +88,7 @@ This repository documents the technical setup of a local cybersecurity laborator
 **Launch**: Successfully initialized using ```cowrie start``` and verified with ```cowrie status```.
 
 ## Tools & Technologies Used
-- **Hypervisor**: VMware Workstation Pro 17.x
+- **Hypervisor**: VMware Workstation-full-25H2
 - **Attacker OS**: Kali Linux 2025.4
 - **Victim OS**: Debian 12 (Bookworm)
 - **Honeypot**: Cowrie (SSH/Telnet)
