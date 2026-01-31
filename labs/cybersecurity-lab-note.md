@@ -14,13 +14,13 @@ This repository documents the technical setup of a local cybersecurity laborator
 - Install VMware Workstation Pro on the host system.
 
 2. **VM Deployment**: Downloaded the pre-configured Kali VMware Image (.7z).
-- Extracted the archive to a folder on your system.
-- Used the "Open a Virtual Machine" feature in VMware to import the .vmx file.
+- Extract the archive to a folder on your system.
+- Use the "Open a Virtual Machine" feature in VMware to import the .vmx file.
 
 ### Critical Troubleshooting: The "Invisible Cursor" Bug
 **Issue**: Upon launching Kali, the cursor became "stuck" in a transparent state. It was visible when "ungrabbed" (Ctrl+Alt) but disappeared immediately upon clicking into the VM.
-**Attempted Fixes (Failed):**
 
+**Attempted Fixes (Failed):**
 - Disabling **Accelerate 3D Graphics**.
 - Forcing software cursors via ```etc/environment (KWIN_FORCE_SW_CURSOR=1)```.
 - Reinstalling ```open-vm-tools-desktop``` (Failed due to missing ```xserver-xorg-video-vmware``` package candidates).
@@ -37,8 +37,6 @@ This repository documents the technical setup of a local cybersecurity laborator
 **Server Setup**
 - OS: Debian 12 "netinst" ISO (amd64).
 - Downloaded from the official Debian site: ```https://www.debian.org/distrib/netinst```
-
-- Resource Allocation: Configured as a lightweight VM to minimize overhead.
 
 **Installation Steps**
 - Create a new VM in VMware Workstation.
