@@ -36,7 +36,7 @@ This repository documents the technical setup of a local cybersecurity laborator
 2. ## Victim Environment: Cowrie Honeypot
 **Server Setup**
 - OS: Debian 13 "netinst" ISO (amd64).
-- Downloaded from the official Debian site: ```https://www.debian.org/distrib/netinst```
+- Downloaded from the official Debian site: https://www.debian.org/distrib/netinst
 
 **Installation Steps**
 - Create a new VM in VMware Workstation.
