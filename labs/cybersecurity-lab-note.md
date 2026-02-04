@@ -13,7 +13,7 @@ This repository documents the technical setup of a local cybersecurity laborator
 - Click the release date, complete the additional checks, and download the installer.
 - Install VMware Workstation Pro on the host system.
 
-2. **VM Deployment**:  Go to kali.org and download the pre-configured Kali VMware Image(.7z) or use the link provided: https://kali.download/base-images/kali-2025.4/kali-linux-2025.4-vmware-amd64.7z
+2. **VM Deployment**:  Go to https://kali.org and download the pre-configured Kali VMware Image(.7z) or use the link provided: https://kali.download/base-images/kali-2025.4/kali-linux-2025.4-vmware-amd64.7z
 - Extract the archive to a folder on your system.
 - Use the "Open a Virtual Machine" feature in VMware to import the .vmx file.
 
