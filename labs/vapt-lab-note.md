@@ -20,17 +20,17 @@ To ensure a clean and repeatable environment, I deployed DVWA using Docker:
 
 2. Install Docker ```sudo apt install docker.io -y```
 
-3. Run DVWA:```sudo docker run --rm -it -p 80:80 vulnerables/web-dvwa```
+3. Run DVWA: ```sudo docker run --rm -it -p 80:80 vulnerables/web-dvwa```
 
-Access DVWA in Browser: Open browser and type ```http://localhost``` and login with ```admin/password```
+4. Access DVWA in Browser: Open browser and type ```http://localhost``` and login with ```admin/password```
 
 **After logging in**:
 
-Click **Setup / Reset DB** in the left menu
+1. Click **Setup / Reset DB** in the left menu
 
-Scroll down
+2. Scroll down
 
-Click **Create / Reset Database**
+3. Click **Create / Reset Database**
 
 Once you see **Database has been created**, DVWA is ready
 
