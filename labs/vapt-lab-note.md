@@ -4,10 +4,10 @@ This project demonstrates a full-cycle vulnerability management process, includi
 
 ### Tools Used:
 
-Kali Linux: Primary attacking OS.
+**Kali Linux**: Primary attacking OS.
 
-Docker: To host the Damn Vulnerable Web App (DVWA).
+**Docker**: To host the Damn Vulnerable Web App (DVWA).
 
-OpenVAS (GVM): For automated vulnerability scanning.
+**OpenVAS (GVM)**: For automated vulnerability scanning.
 
-Metasploit Framework: For validating and exploiting found vulnerabilities.
+**Metasploit Framework**: For validating and exploiting found vulnerabilities.
