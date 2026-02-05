@@ -40,7 +40,7 @@ Once you see **Database has been created**, DVWA is ready
 
 Before installing OpenVAS, shut down Kali and set:
 
-RAM: 8 GB minimum 
+RAM: 4 GB minimum 
 
 CPU: 2 cores minimum (4 recommended)
 
