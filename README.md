@@ -23,10 +23,10 @@ To develop practical cybersecurity skills, gain exposure to real-world security 
 
 ## Tools & Technologies
 - Kali Linux
-- Nmap
+- Nmap/OpenVAS
 - Wireshark
 - Git & GitHub
-- Virtual Machines (VirtualBox)
+- Virtual Machines (VMware)
 
 ---
 
@@ -43,7 +43,7 @@ To develop practical cybersecurity skills, gain exposure to real-world security 
 
 ## Mini Projects (Beginner Level)
 -  **Network Scanning Lab**  
-  Conducted basic network scans using Nmap to identify open ports and services.
+  Vulnerability Scan and Exploit Simulation Using OpenVAS and Metasploit.
 
 - **Security Audit**  
   Conducted an internal security audit for Botium Toys Enterprise as part of Google Cybersecurity training exercise
@@ -54,7 +54,7 @@ To develop practical cybersecurity skills, gain exposure to real-world security 
 ---
 
 ## Learning Platforms
-- TryHackMe (Beginner Path)
+- HackTheBox (Beginner Path)
 - Coursera Courses
 - YouTube cybersecurity tutorials
 
