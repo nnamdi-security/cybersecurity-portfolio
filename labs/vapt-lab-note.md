@@ -84,3 +84,4 @@ Since this was a new installation, I performed a "hard reset" of the PostgreSQL 
 
 **Result**: The database was successfully created, and gvm-check-setup confirmed a healthy status.
 
+## Vulnerability Scanning
