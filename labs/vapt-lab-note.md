@@ -70,8 +70,9 @@ The Kali Linux system libraries (libc) were updated, but the existing PostgreSQL
 
 **The Resolution**
 
-Since this was a new installation, I performed a "hard reset" of the PostgreSQL cluster to align it with the system version using the following steps:
+Since this was a new installation, I performed a "hard reset" of the PostgreSQL cluster to align it with the system version using the following. 
 
+**steps**:
 1. **Stop Services**: ```sudo systemctl stop postgresql```
 
 2. **Drop Broken Cluster**: ```sudo pg_dropcluster --stop 18 main```(Note: replace 18 with your version number, if you don't know it, run ```pg_lsclusters```
