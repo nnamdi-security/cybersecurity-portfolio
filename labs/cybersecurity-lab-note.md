@@ -60,7 +60,7 @@ This repository documents the technical setup of a local cybersecurity laborator
    
 2. Clone Cowrie and Set Up Virtual Environment:
    
-   ```git clone http://github.com/cowrie/cowrie```
+   ```git clone https://github.com/cowrie/cowrie.git```
    
    ```cd cowrie```
    
