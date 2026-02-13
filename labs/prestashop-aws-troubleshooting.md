@@ -579,7 +579,7 @@ This troubleshooting experience demonstrates the importance of understanding clo
 
 ---
 
-**Author:** Nnamdi Iteh  
+**Author:** Nnamdi Ileh  
 **Date:** February 10, 2026  
 **Environment:** AWS EU-North-1 (Stockholm)  
 **Purpose:** Cybersecurity Lab
