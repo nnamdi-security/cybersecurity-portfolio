@@ -268,8 +268,8 @@ curl -I http://localhost
 
 ### 1.4 Initial Access
 
-- **Frontend:** http://localhost
-- **Admin Panel:** http://localhost/admin-dev
+- **Frontend:** http://localhost:8080
+- **Admin Panel:** http://localhost:8080/admin-dev
 - **Credentials:** admin@example.com / Admin123456!
 
 ---
