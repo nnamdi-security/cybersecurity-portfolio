@@ -29,6 +29,8 @@ To develop practical cybersecurity skills, gain exposure to real-world security 
 - Wireshark
 - Git & GitHub
 - Virtual Machines (VMware)
+- BurpSuite/OWASP ZAP
+- ELK Stack
 
 ---
 
