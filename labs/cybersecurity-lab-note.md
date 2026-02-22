@@ -29,7 +29,7 @@ This repository documents the technical setup of a local cybersecurity laborator
 **The Solution**: The issue was caused by outdated hardware compatibility in the pre-configured image.
 **Fix**: Right-click VM > Manage > Change Hardware Compatibility.
 
-**Action**: Upgraded the compatibility version to 16.x.
+**Action**: Downgraded the compatibility version to 16.x.
 
 **Result**: Cursor visibility and mouse integration were restored immediately.
 
