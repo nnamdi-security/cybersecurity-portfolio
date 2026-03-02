@@ -200,7 +200,7 @@ Then updated each visualisation to use the real field names: `clientip.keyword`,
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/YOUR_USERNAME/security-sim-lab.git
+git clone https://github.com/nnamdi-security/cybersecurity-portfolio/tree/main/projects/security-sim-lab.git
 cd security-sim-lab
 
 # 2. Start DVWA
