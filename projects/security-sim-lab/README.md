@@ -27,10 +27,10 @@ A hands-on cybersecurity project simulating a small-scale enterprise environment
        ▼
 [Apache + ModSecurity WAF :80]   ──logs──▶  [modsec_audit.log]
        │                                            │
-  blocks SQLi/XSS                                  ▼
+  blocks SQLi/XSS                                   ▼
        │                                     [Logstash :5044]
        ▼                                            │
-[DVWA :8080]  [Dionaea Honeypot]                   ▼
+[DVWA :8080]  [Dionaea Honeypot]                    ▼
                                         [Elasticsearch :9200]
                                                     │
                                                     ▼
@@ -183,20 +183,6 @@ curl http://localhost:9200/_cat/indices?v
 curl "http://localhost:9200/security-logs-*/_search?pretty&size=1"
 ```
 Then updated each visualisation to use the real field names: `clientip.keyword`, `verb.keyword`, `response.keyword`, `request.keyword`.
-
----
-
-## 📁 Deliverables
-
-| Deliverable | Description |
-|---|---|
-| `nmap_scan.txt` | Full Nmap service scan output |
-| `nmap_vuln.txt` | Nmap vulnerability script scan results |
-| `waf_block_evidence.txt` | curl output showing HTTP 403 WAF block |
-| `modsec_audit_evidence.txt` | ModSecurity audit log with rule triggers |
-| Network Diagram | draw.io architecture diagram |
-| Kibana Dashboard | Screenshot of live attack monitoring |
-| Incident Response Report | Full IR report (Word document) |
 
 ---
 
