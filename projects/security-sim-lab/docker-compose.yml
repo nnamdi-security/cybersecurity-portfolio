@@ -1,0 +1,83 @@
+services:
+
+  # ── Vulnerable Web App ──────────────────────────────
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "8080:80"
+    networks:
+      - simnet
+
+  # ── Honeypot ────────────────────────────────────────
+  dionaea:
+    image: dinotools/dionaea
+    ports:
+      - "21:21"
+      - "23:23"
+      - "445:445"
+      - "1433:1433"
+    networks:
+      - simnet
+
+  # ── WAF (ModSecurity + OWASP CRS + Reverse Proxy) ───
+  waf:
+    image: owasp/modsecurity-crs:apache
+    ports:
+      - "80:80"
+    environment:
+      - PARANOIA=1
+      - ANOMALY_INBOUND=5
+      - BACKEND=http://dvwa:80
+      - ERRORLOG=/var/log/waf/modsec_audit.log
+      - ACCESSLOG=/var/log/waf/access.log
+    volumes:
+      - waf_logs:/var/log/waf
+    depends_on:
+      - dvwa
+    networks:
+      - simnet
+
+  # ── Elasticsearch ────────────────────────────────────
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    networks:
+      - simnet
+
+  # ── Logstash ─────────────────────────────────────────
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.11.0
+    environment:
+      - LS_JAVA_OPTS=-Xms256m -Xmx256m
+    volumes:
+      - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - waf_logs:/var/log/waf:ro
+    depends_on:
+      - elasticsearch
+      - waf
+    networks:
+      - simnet
+
+  # ── Kibana ───────────────────────────────────────────
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - simnet
+
+volumes:
+  waf_logs:
+
+networks:
+  simnet:
+    driver: bridge
